@@ -38,7 +38,7 @@
           menu.before(hamburger);
           $('#mobile-menu').append(styles);
         } else {
-          return false;
+					return false;		
         }
       } else if ( width > mobileWidth) { 
         hamburgerActive = false;
@@ -50,11 +50,27 @@
       $('#mobile-icon').on('click touchstart', function(e) {
         e.preventDefault();
         $('#mobile-icon').toggleClass('active');
-        menu.toggleClass('active');
-      });
-    }
+				menu.toggleClass('active');
+			});
+		}
 
-    menuFunction();
+		// Fechando menu mobile ao clicar fora da caixa
+		var closeMenu = function() {
+			$(document).mouseup(function(e) {
+				e.preventDefault();
+				var menu = $('#mobile-menu');
+				var icon = $('#mobile-icon');
+				if (!menu.is(e.target) && menu.has(e.target).length == 0) {
+					menu.removeClass('active');
+					console.log('ativado');
+					icon.removeClass('active');
+				}
+			});
+		}
+		
+
+		menuFunction();
+		closeMenu();
     $(window).resize(menuFunction);
   };
 }( jQuery, window));

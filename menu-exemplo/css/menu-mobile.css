@@ -5,6 +5,7 @@
 	background: #FFF;
 	width: auto;
 	max-width: 280px;
+	border-radius: 2px;
 	padding: 20px;
 	right: 0;
 	border: 1px solid #242526;
@@ -43,6 +44,8 @@
 	margin: 0px;
 	border: none;
 	min-width: 140px;
+	font-weight: 400;
+	font-size: 1.125rem;
 }
 
 #mobile-menu li a:hover {
