@@ -23,8 +23,8 @@
         #mobile-menu li { border-color: ' + color + '; }\
         #mobile-menu li:last-of-type { border-color: ' + color + '; }\
         #mobile-menu li a { color: ' + color + '; }\
-        #mobile-menu li a:hover { color: ' + background + '; background: ' + color + '; }\
-        #mobile-icon::before { background: ' + color + '; }\
+				#mobile-menu li a:hover { color: ' + background + '; background: ' + color + '; }\
+        #mobile-icon::before { background: ' + background + '; }\
         #mobile-icon::aftger { box-shadow: 0 4px 0 0 ' + color + ', 0 -4px 0 0 ' + color + '; }\
         #mobile-icon.active::before, #mobile-icon.active::after { background: ' + color + '; }\
     </style>';

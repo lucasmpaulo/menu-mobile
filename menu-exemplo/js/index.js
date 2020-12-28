@@ -2,6 +2,6 @@
 $('ul.menu').menuMobile({
   breakpoint: 752,
   top: 50,
-  background: '#FFFFFF',
-  color: '#29383e'
+  background: '#fff',
+  color: '#c73863'
 })
