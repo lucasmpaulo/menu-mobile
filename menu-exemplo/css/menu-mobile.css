@@ -2,12 +2,14 @@
 #mobile-menu {
 	visibility: hidden;
 	position: absolute;
-	background: black;
+	background: #FFF;
 	width: auto;
 	max-width: 280px;
 	padding: 20px;
 	right: 0;
+	border: 1px solid #242526;
 	top: 50px;
+	margin-top: 5px;
 	text-align: left;
 	opacity: 0;
 	transform: translate(-20px, 0px);
@@ -20,6 +22,7 @@
 	opacity: 1;
 	transform: translate(0px, 0px);
 	transition: .3s ease;
+	border: 1px solid #c73863;
 }
 
 #mobile-menu li {
@@ -43,8 +46,8 @@
 }
 
 #mobile-menu li a:hover {
-	background: white;
-	color: black;
+	background: #c73863;
+	color: #FFF;
 }
 
 /* Menu Icon */

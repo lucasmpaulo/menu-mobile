@@ -1,7 +1,8 @@
 #logo {
 	width: 30%;
 	float: left;
-	font-size: 2em;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 nav {
@@ -24,14 +25,15 @@ a {
 	text-decoration: none;
 	color: white;
 	font-family: courier;
+	transition: all .2s;
 }
 
 a:hover {
-	color: black;
+	color: #c73863;
 }
 
 header {
-	background: tomato;
+	background: #242526;
 	padding: 10px 20px;
 }
 
